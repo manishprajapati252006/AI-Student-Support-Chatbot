@@ -1,3 +1,4 @@
+
 🤖 AI Student Support Chatbot
 
 A modern AI chatbot built using Flask and Groq API.
@@ -18,4 +19,8 @@ A modern AI chatbot built using Flask and Groq API.
 - CSS
 - JavaScript
 - Groq API
+
+
+# AI-Student-Support-Chatbot
+AI Chatbot for Student Support Services using Flask and Gemini AI
 
