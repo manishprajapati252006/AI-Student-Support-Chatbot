@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Student Support Chatbot</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+<div class="background">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
+
+<div class="container">
+
+    <header>
+
+        <div class="title">
+
+            <div class="logo">🤖</div>
+
+            <div>
+
+                <h1>AI Student Support</h1>
+
+                <p>Your Personal Learning Assistant</p>
+
+            </div>
+
+        </div>
+
+        <button id="themeToggle" title="Toggle Theme">
+            🌙
+        </button>
+
+    </header>
+
+    <main id="chatBox">
+
+        <div class="message ai">
+
+            <div class="avatar">🤖</div>
+
+            <div class="bubble">
+
+                Hello 👋<br><br>
+
+                I'm your AI Student Support Assistant.
+
+                Ask me anything about programming,
+                college subjects,
+                projects,
+                AI,
+                Machine Learning,
+                or your studies.
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="typing" class="typing hidden">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <footer>
+
+        <textarea
+            id="userInput"
+            placeholder="Ask anything..."
+            rows="1"></textarea>
+
+        <button id="sendBtn">
+            ➤
+        </button>
+
+    </footer>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
